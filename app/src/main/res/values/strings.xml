@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FileDate Sync</string>
+    <string name="applyMainStr">Welcome into FileDate Sync! First, choose the folder where the files to edit are located.</string>
+    <string name="createMainStr">Welcome into FileDate Sync! Here you can create the file for restoring the last modified value</string>
+    <string name="applyPickStr">Now choose the file with the time information.</string>
+    <string name="createPickStr">Now choose where the file will be saved.</string>
+</resources>

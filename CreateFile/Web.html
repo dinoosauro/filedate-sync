@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileDate Sync</title>
+    <style>
+        body {
+            padding: 10px;
+            background-color: #151515;
+            color: #fafafa;
+            font-family: sans-serif;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FileDate Sync</h1>
+    <label>
+        <input type="checkbox" id="folder" checked> Pick a folder
+    </label><br><br>
+    <button id="picker">Choose files</button>
+    <p>The file with all the requested information will be automatically downloaded.</p>
+    <input style="display: none;" type="file" id="file" multiple>
+    <script>
+        document.getElementById("picker").onclick = () => {
+            document.getElementById("file").setAttribute("webkitdirectory", document.getElementById("folder").checked);
+            document.getElementById("file").click();
+        }
+        document.getElementById("file").onchange = () => {
+            let output = "";
+            for (const file of document.getElementById("file").files) output += `${file.lastModified} ${(file.webkitRelativePath ? file.webkitRelativePath.substring(file.webkitRelativePath.indexOf("/") + 1) : file.name)}\n`;
+            var a = document.createElement("a");
+            a.target = "blank";
+            a.download = "Files.txt";
+            a.href = URL.createObjectURL(new Blob([output]));
+            a.click();
+        }
+    </script>
+</body>
+
+</html>

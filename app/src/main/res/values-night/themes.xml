@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FileDateSync" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="fontFamily">@font/work_sans</item>
+
+    </style>
+</resources>
