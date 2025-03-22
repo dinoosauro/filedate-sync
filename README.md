@@ -12,11 +12,17 @@ your computer.
 ## Generate a file
 
 To do so, you'll need to generate a file that contains the file directory and
-the last modified date. Don't worry, this can be done automatically. You can
-find on the [CreateFile](./CreateFile/) folder both a
+the last modified date. Don't worry, this can be done automatically.
+
+The easiest method is to click
+[here](https://dinoosauro.github.io/filedate-sync/Web.html), choose the files or
+the folder that contains the files you need to copy the "Last modified" date of,
+and copy the file to your phone.
+
+You can also find on the [CreateFile](./CreateFile/) folder both a
 [simple webpage](./CreateFile/Web.html) and a
-[Node.JS script](./CreateFile/NodeJS.cjs) to create this. Otherwise, you can
-create the file directly from the application in the "Generate" section.
+[Node.JS script](./CreateFile/NodeJS.cjs) to create this file. Otherwise, you
+can create the file directly from the application in the "Generate" section.
 
 ## Apply edits
 
@@ -26,3 +32,10 @@ choose the file generated before.
 
 Note: due to Android's restrictions, starting from Android 10 you'll need to
 grant full system storage access.
+
+## App screenshot
+
+Below you can find a screenshot of the UI of the "Apply" section. The UI is
+really similar also in all other sections.
+
+![Main App UI](./Screenshot_20250322_185431_FileDate%20Sync.jpeg)
